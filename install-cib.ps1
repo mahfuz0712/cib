@@ -8,13 +8,15 @@ if (!(Test-Path $mingwLib) -or !(Test-Path $mingwInclude)) {
 }
 
 # Download files
-$cibAUrl = "https://github.com/mahfuz0712/cib/blob/main/libcib.a"
-$cibHUrl = "https://github.com/mahfuz0712/cib/blob/main/cib.h"
+$cibAUrl = "https://raw.githubusercontent.com/mahfuz0712/cib/main/libcib.a"
+$cibHUrl = "https://raw.githubusercontent.com/mahfuz0712/cib/main/cib.h"
 
-$libPath = "$mingwLib\cib.a"
+$libPath = "$mingwLib\libcib.a"
 $includePath = "$mingwInclude\cib.h"
 
 Invoke-WebRequest -Uri $cibAUrl -OutFile $libPath
 Invoke-WebRequest -Uri $cibHUrl -OutFile $includePath
 
-Write-Host "✅ Installed cib.a and cib.h successfully!" -ForegroundColor Green
+Write-Host "Installed CIB (C In Bangla ) Library successfully!" -ForegroundColor Green
+
+

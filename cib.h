@@ -1,8 +1,6 @@
 #ifndef CIB_H
 #define CIB_H
 
-#include <stdio.h>
-#include <stdarg.h>
 
 // Function declarations
 void lekho(char str[], ...);
@@ -16,4 +14,4 @@ float bhagKoro(float a, float b);
 float modKoro(float a, float b);
 float sheshKoro(float a, float b);
 
-#endif
+#endif CIB_H
